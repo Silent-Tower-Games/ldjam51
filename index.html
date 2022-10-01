@@ -17,8 +17,18 @@ canvas {
     transform: translate(-50%, -50%);
 }
 </style>
+<script type="text/javascript" src="require.js"></script>
 </head>
 <body>
 <canvas id="c"></canvas>
+<script type="text/javascript">
+window.addEventListener('load', () => {
+    require(['main'], (main) => {
+        // new main.App();
+        console.log('main loaded');
+        new main.App();
+    });
+});
+</script>
 </body>
 </html>
