@@ -6,7 +6,7 @@
 <title>Every 10 Seconds</title>
 <style type="text/css">
 body {
-    background-color: #111;
+    background-color: #333;
 }
 
 canvas {
@@ -24,9 +24,7 @@ canvas {
 <script type="text/javascript">
 window.addEventListener('load', () => {
     require(['main'], (main) => {
-        // new main.App();
-        console.log('main loaded');
-        new main.App();
+        main.init();
     });
 });
 </script>

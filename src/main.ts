@@ -1,7 +1,11 @@
-import { output } from "./output";
+import { App } from "./App";
 
-export class App {
-    constructor() {
-        console.log(output);
-    }
+export function init(): void
+{
+    (window as any).CurrentAppGameInstance = new App();
+}
+
+export function u()
+{
+    return (window as any).CurrentAppGameInstance;
 }
